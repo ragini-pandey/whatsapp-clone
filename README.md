@@ -64,7 +64,7 @@ Ensure that you have the following installed:
 4. Start the backend server:
 
    ```bash
-   npm run dev
+   npm run backend
    ```
 
 ### Frontend Setup
@@ -79,7 +79,7 @@ Ensure that you have the following installed:
 2. Start the React frontend:
 
    ```bash
-   npm start
+   npm run frontend
    ```
 
 ### Running the Application
