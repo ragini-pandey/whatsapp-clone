@@ -1,0 +1,11 @@
+{
+  "name": "whatsapp-clone",
+  "version": "1.0.0",
+  "description": "Whatsapp clone",
+  "scripts": {
+    "frontend": "cd frontend && npm start",
+    "backend": "cd backend && nodemon server.js"
+  },
+  "author": "Ragini Pandey",
+  "license": "ISC"
+}
