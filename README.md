@@ -106,31 +106,6 @@ Then visit: `http://localhost:3000`
 
 ---
 
-## 🏃 One-Command Dev (optional)
-
-If you want to start both servers from the repo root, add this to the root `package.json`:
-
-```json
-{
-  "scripts": {
-    "dev:api": "npm --prefix backend run backend",
-    "dev:web": "npm --prefix frontend run frontend",
-    "dev": "concurrently \"npm run dev:api\" \"npm run dev:web\""
-  },
-  "devDependencies": {
-    "concurrently": "^9.0.0"
-  }
-}
-```
-
-Then:
-```bash
-npm install
-npm run dev
-```
-
----
-
 ## 🔐 Environment Variables (recap)
 
 | Key                  | Where      | Purpose                                  |
@@ -139,11 +114,7 @@ npm run dev
 | `MONGODB_URL`        | backend    | MongoDB connection string                |
 | `PUSHER_KEY`         | backend    | Pusher app key                           |
 | `PUSHER_SECRET`      | backend    | Pusher app secret                        |
-| `PUSHER_APP_ID`*     | backend    | Pusher app id (*if required*)            |
-| `PUSHER_CLUSTER`*    | backend/UI | Cluster, e.g. `mt1` (*if required*)      |
 | `REACT_APP_PUSHER_KEY`| frontend  | Pusher app key for React client          |
-
-> *Exact keys may vary depending on your Pusher config.*
 
 ---
 
