@@ -7,5 +7,9 @@
     "backend": "cd backend && nodemon server.js"
   },
   "author": "Ragini Pandey",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ragini-pandey/whatsapp-clone.git"
+  }
 }

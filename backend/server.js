@@ -5,9 +5,6 @@ import Pusher from 'pusher';
 import cors from 'cors'
 import 'dotenv/config'
 
-
-//app config
-//create app instance for creating routes
 const app = express()
 const port = process.env.PORT || 9000;
 const dbUrl = process.env.MONGODB_URL;
@@ -15,11 +12,12 @@ const dbUrl = process.env.MONGODB_URL;
 app.use(express.json())
 app.use(cors())
 
-// app.use((req, res, next) => {
-//     res.setHeader("Access-Control-Allow-Origin", "*")
-//     res.setHeader("Access-Control-Allow-Headers", "*")
-//     next()
-// })
+app.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", "*")
+    res.setHeader("Access-Control-Allow-Headers", "*")
+    next()
+})
+
 app.listen(port, () => console.log(`Server is running at localhost:${port}`));
 
 const pusher = new Pusher({
@@ -58,7 +56,7 @@ mongoose.connection.once('open', () => {
         }
     })
 });
-//routes
+
 app.get('/', (req, res) => {
     return res.status(200).send("Hello world")
 })
