@@ -12,6 +12,12 @@ A full-stack WhatsApp-style chat app built on the MERN stack with real-time mess
 
 ---
 
+## 🖼️ Screenshots
+
+![Chat Screen](https://github.com/ragini-pandey/whatsapp-clone/blob/master/frontend/public/screenshot1.png)
+
+---
+
 ## 🧱 Tech Stack
 
 **Frontend**
@@ -148,16 +154,9 @@ npm run dev
 
 ---
 
-## 🖼️ Screenshots
-
-![Chat Screen](https://github.com/ragini-pandey/whatsapp-clone/blob/master/frontend/public/screenshot1.png)
-
----
-
-
 ## 📦 Dependencies (high-level)
 
-**Backend:** Express, Mongoose, Pusher
+**Backend:** Express, Mongoose, Pusher  
 **Frontend:** React, Axios, Pusher-js, React Router
 
 ---
@@ -169,3 +168,5 @@ npm run dev
 - File/image sharing
 - Group chats
 - Message search & pagination
+
+---
