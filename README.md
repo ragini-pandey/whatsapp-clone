@@ -127,7 +127,7 @@ Then visit: `http://localhost:3000`
 
 ## 📦 Dependencies (high-level)
 
-**Backend:** Express, Mongoose, Pusher  
+**Backend:** Express, Mongoose, Pusher
 **Frontend:** React, Axios, Pusher-js, React Router
 
 ---
@@ -139,5 +139,3 @@ Then visit: `http://localhost:3000`
 - File/image sharing
 - Group chats
 - Message search & pagination
-
----
